@@ -227,4 +227,18 @@
         <data_struct indicator="html" identifier="" line_separator="body" cell_separator="p"/>
         <prettify replaceBy=''>((^(?!DEFINITION.*).*)&(^(?!DESCRIPTION.*).*))|\n|(DEFINITION *)|(DESCRIPTION *)</prettify>
     </database>
+    <database dbname="cazy" type="text/html" method="GET">
+        <link stern="http://www.cazy.org/" aft=".html"/>
+        <headers>
+            <header type="">Activities in Family</header>
+            <header type="">Note</header>
+            <header type="">Commercial Enzyme Provider(s)</header>
+            <header type="">Statistics</header>
+        </headers>
+        <fields>
+            <field op=""></field>
+        </fields>
+        <data_struct indicator="div" identifier="class" identification_string="volet_central" line_separator="table" cell_separator="td"/>
+        <prettify replaceBy=''>\n>LOC_.*\n|\n|\r|\t|\s\s|\*|^\s|\s$</prettify>
+    </database>
 </databases>
